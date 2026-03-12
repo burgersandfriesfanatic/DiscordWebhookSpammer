@@ -5,11 +5,11 @@ echo WEBHOOK SPAMMER
 echo github.com/wiced1
 setlocal enabledelayedexpansion
 
-set /p webhook=Enter Webhook URL: 
-set /p message=Enter message to send: 
-set /p username=Enter bot username (default is "Bot"): 
+set /p webhook=https://discord.com/api/webhooks/1481507860000014468/kUX6x0FDJswVlAHwB9bjNxB7MLffzDDHZ0t039P74ZOa4bQQv8EFUT8dMjZWmSoCnkNX: 
+set /p message=Hi there: 
+set /p username=Burger: 
 set /p avatar_url=Enter avatar URL (optional): 
-set /p num_messages=Enter number of messages to send (default is 1): 
+set /p num_messages=5: 
 
 set "username=!username: =!"    REM Remove any spaces from the username
 
@@ -41,3 +41,4 @@ for /l %%i in (1,1,%num_messages%) do (
 echo Messages sent: %count%
 pause
 goto :EOF
+
