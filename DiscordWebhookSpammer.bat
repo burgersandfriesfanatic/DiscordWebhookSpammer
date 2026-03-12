@@ -9,7 +9,7 @@ set /p webhook=https://discord.com/api/webhooks/1481507860000014468/kUX6x0FDJswV
 set /p message=Hi there: 
 set /p username=Burger: 
 set /p avatar_url=Enter avatar URL (optional): 
-set /p num_messages=5: 
+set /p num_messages=50: 
 
 set "username=!username: =!"    REM Remove any spaces from the username
 
@@ -41,4 +41,5 @@ for /l %%i in (1,1,%num_messages%) do (
 echo Messages sent: %count%
 pause
 goto :EOF
+
 
